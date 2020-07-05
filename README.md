@@ -12,13 +12,12 @@ ___
 ___
 ## ``How to install and run the application?``
 
-You need to make sure that you have your package manager installed
++ **Difficulties I encountered, along with the solutions**  <br />  <br />
 
-Please make sure that you are in the right directory
 
-1. **`cd essentials`** cd to the essentials directory
-2. **`npm install`** once you are in essentials directory, install the dependencies
-3. **`npm start`** start the application by using local a server (this is in development mode)
+
+1. **`npm install`** once you are in the right directory, install the dependencies
+2. **`npm start`** start the application by using local a server (this is in development mode)
 
 This might take a while to load up
 ___
