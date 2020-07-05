@@ -12,14 +12,11 @@ ___
 ___
 ## ``How to install and run the application?``
 
-+ **This project accessible at (https://mario-plan-1290c.firebaseapp.com)**   <br />  <br />
-
-
-
 1. **`npm install`** once you are in the right directory, install the dependencies
 2. **`npm start`** start the application by using local a server (this is in development mode)
 
-This might take a while to load up
+This might take a while to load up   <br />
++ **This project accessible at (https://mario-plan-1290c.firebaseapp.com)**   <br />
 ___
 ## ``Preview of the application``
 - **Sign in page**  <br />  <br />
