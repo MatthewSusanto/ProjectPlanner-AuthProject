@@ -3,21 +3,13 @@
 ___
 **I will be showing:**
 
-+ **How to install and run the application**
 + **Preview of the application**
++ **How to install and run the application**
 + **What did I learn?**
 + **Technologies used**
 + **Difficulties I encountered, along with the solutions**
-
 ___
-## ``How to install and run the application?``
 
-1. **`npm install`** once you are in the right directory, install the dependencies
-2. **`npm start`** start the application by using local a server (this is in development mode)
-
-This might take a while to load up   <br />
-+ **This project accessible at (https://mario-plan-1290c.firebaseapp.com)**   <br />
-___
 ## ``Preview of the application``
 - **Sign in page**  <br />  <br />
 ![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/ezgif.com-crop.gif?)  <br />  <br />
@@ -43,7 +35,14 @@ ___
 - **FIRESTORE- Screenshot of the security rules**  <br />  <br />
 ![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/securityRules.PNG?)
 ___
+## ``How to install and run the application?``
 
+1. **`npm install`** once you are in the right directory, install the dependencies
+2. **`npm start`** start the application by using local a server (this is in development mode)
+
+This might take a while to load up   <br />
++ **This project accessible at (https://mario-plan-1290c.firebaseapp.com)**   <br />
+___
 ## ``What did I learn?``
 
 - User authentication (sign up/sign in/sign out)
