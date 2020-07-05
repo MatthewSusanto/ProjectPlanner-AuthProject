@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ``PROJECT PLANNER - FIREBASE/REACT/REDUX PROJECT``
+**This is a project planner project with fully functioning Auth and Database. I built this using React/Redux and Firebase as the backend services.**
+___
+**I will be showing:**
 
-## Available Scripts
++ **How to install and run the application**
++ **Preview of the application**
++ **What did I learn?**
++ **Technologies used**
++ **Difficulties I encountered, along with the solutions**
 
-In the project directory, you can run:
+___
+## ``How to install and run the application?``
 
-### `npm start`
+You need to make sure that you have your package manager installed
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please make sure that you are in the right directory
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. **`cd essentials`** cd to the essentials directory
+2. **`npm install`** once you are in essentials directory, install the dependencies
+3. **`npm start`** start the application by using local a server (this is in development mode)
 
-### `npm test`
+This might take a while to load up
+___
+## ``Preview of the application``
+- **Sign in page**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/ezgif.com-crop.gif?)  <br />  <br />
+___
+- **Sign up page**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/ezgif.com-crop%20(1).gif?)
+___
+- **Dashboard, notification, posts, create post**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/ezgif.com-crop%20(2).gif?)
+___
+- **FIREBASE- Screenshot of functions on the server**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/functions.PNG?)
+___
+- **FIREBASE- Screenshot of the authentication**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/auth.PNG?)
+___
+- **FIRESTORE- Screenshot of the Firestore project list**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/projects.PNG?)
+___
+- **FIRESTORE- Screenshot of the Firestore user list**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/users.PNG?)
+___
+- **FIRESTORE- Screenshot of the security rules**  <br />  <br />
+![](https://github.com/MatthewSusanto/resource/blob/master/marioplanner/securityRules.PNG?)
+___
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ``What did I learn?``
 
-### `npm run build`
+- User authentication (sign up/sign in/sign out)
+- Creating and maintaining an online database using Firebase services. 
+- Creating functions that will be run from an online server
+- How to host and deploy using Firebase
+- A better understanding of backend
+- Security rules
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+___
+## ``Technologies Used``
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- ReactJs
+- Javascript (ES6+)
+- HTML5
+- CSS3
+- Firebase
+- Redux
+- Materialize
+- Thunk
+- Firestore
+- Moment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+___
+## ``Difficulties I encountered, along with the solutions``
 
-### `npm run eject`
+- **Difficulty:** Configurations of Redux to work with Firebase and Firestore  <br />
+**Solution:** Turns out I was using the outdated configuration of them
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Difficulty:** Firebase profile is not updating <br />
+**Solution:** Took me several days to figure this out, fixed it by using an updated version of Firebase and changing the configuration
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Difficulty:** Sometimes the Firebase and Firestore data would not synchronize  <br />
+ **Solution:** I figure out that there is a connectivity issue and there is a certain limit of actions allowed per hour
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
