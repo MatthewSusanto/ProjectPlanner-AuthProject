@@ -1,17 +1,71 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { createStore, applyMiddleware, compose } from "redux";
+import rootReducer from "./store/reducers/rootReducer";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import {
+  createFirestoreInstance,
+  getFirestore,
+  reduxFirestore
+} from "redux-firestore";
+import { ReactReduxFirebaseProvider, getFirebase } from "react-redux-firebase";
+import fbConfig from "./config/fbConfig";
+import firebase from "firebase/app";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+//for render on auth ready
+import { useSelector } from 'react-redux'
+import { isLoaded } from 'react-redux-firebase';
+
+
+
+
+const store = createStore(
+  rootReducer,
+  compose(
+    applyMiddleware(thunk.withExtraArgument({ getFirestore, getFirebase })),
+    reduxFirestore(firebase, fbConfig)
+  )
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+const profileSpecificProps = {
+  userProfile: 'users',
+  useFirestoreForProfile: true,
+  enableRedirectHandling: false,
+  resetBeforeLogin: false,
+  updateProfileOnLogin: true,
+
+}
+
+
+const rrfProps = {
+  firebase,
+  config: fbConfig,
+  config: profileSpecificProps,
+  dispatch: store.dispatch,
+  createFirestoreInstance
+};
+
+function AuthIsLoaded({ children }) {
+  const firebase = useSelector(state => state.firebase)
+  if (!isLoaded(firebase.auth)) return <div className="center"> <p>Loading Mario Plan...</p></div>;
+  return children
+}
+
+
+ReactDOM.render(
+  <Provider store={store}>
+    <ReactReduxFirebaseProvider {...rrfProps}>
+      <AuthIsLoaded>
+        <App />
+      </AuthIsLoaded>
+
+    </ReactReduxFirebaseProvider>
+  </Provider>,
+  document.getElementById("root")
+);
+
 serviceWorker.unregister();
