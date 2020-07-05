@@ -12,7 +12,7 @@ ___
 ___
 ## ``How to install and run the application?``
 
-+ **Difficulties I encountered, along with the solutions**  <br />  <br />
++ **This project accessible at (https://mario-plan-1290c.firebaseapp.com)**   <br />  <br />
 
 
 
