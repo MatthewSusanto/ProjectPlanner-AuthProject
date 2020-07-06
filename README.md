@@ -61,7 +61,7 @@ ___
 - CSS3
 - Firebase
 - Redux
-- Materialize
+- Material-UI
 - Thunk
 - Firestore
 - Moment
