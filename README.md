@@ -64,7 +64,7 @@ ___
 - Material-UI
 - Thunk
 - Firestore
-- Moment
+- Moment.js
 
 ___
 ## ``Difficulties I encountered, along with the solutions``
